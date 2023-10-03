@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+      .maindata{
+        display: flex;
+      }
+      .newspaper {
+       padding: 54px;
+      column-count: 4;
+      column-gap: 40px;
+      margin-left: 17px
+       }
+
+      .header{
+        background-color: lightgray;
+        padding: 20px;
+        text-align: center;
+      }
+      .topnav{
+       overflow: hidden;
+       background-color: #333;
+      }
+      .topnav a {
+        float: left;
+      display: block;
+      color: white;
+     text-align: center;
+     padding: 14px 200px;
+     text-decoration: none;
+}
+      .sidebar{
+        background-color:azure;
+        padding: 142px;
+      }
+      .footer{
+        background-color: lightgray;
+        padding:20px;
+        text-align: center;
+      }
+      .pagination{
+        display: inline-block;
+        margin-left: 60%;
+      }
+      .pagination a{
+        color: black;
+        float: left;
+        padding:10px 16px;
+        margin-left: 20px;
+        text-decoration: none;
+      }
+
+      @media screen and (max-width: 700px) {
+      .topnav{   
+        flex-direction: column;
+  }
+}
+    </style>
+        
+    </head>
+    <body>
+        <div class="header">
+        <h1>header</h1>
+    </div>
+    <div class="topnav">
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+    </div>
+       
+        <div class="maindata">
+            <div class="sidebar">
+        <h1>sidebar</h1>
+            </div>
+            <div  class="newspaper">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                 Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
+                 Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.<br><br>
+                 </div><br><br>
+
+                
+        </div>
+        <div class="pagination"> 
+            <a href="#">&laquo</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo</a>
+           </div>
+        <div class="footer">
+            <h1>fotter</h1>
+            </div>
+        </body>
+</html>

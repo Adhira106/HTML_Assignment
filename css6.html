@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+div h1 {
+background-color: red;
+}
+
+
+div + p {
+  background-color: yellow;
+}
+
+h2::first-letter{
+    color: red;
+    font-size: xx-large;
+}
+h2::first-line{
+    color: blue;
+    font-variant: small-caps;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<!-- FOR DECENDANT -->
+<div>
+<h1>Hi I am Pooja</h1>
+<h1>Hi I am Pooja</h1>
+</div>
+
+<!-- FOR Adjacent -->
+<div>
+    <p>Hi I am Pooja</p>
+</div>
+<p>Hi I am Pooja</p>
+<div>
+    <p>Hi I am Pooja</p>
+</div>
+<p>Hi I am Pooja</p>
+
+<!-- /for pseudo-->
+<div>
+
+<h2>Khuda hafiz is a awesome movie</h2>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://kit.fontawesome.com/7fef5870cc.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      .a{
+        text-align: center;
+      }
+      .b{
+        text-align: center;
+        color: blue;
+      }
+      .button{
+        display: flex;
+    justify-content: space-between;
+      }
+    </style>
+       </head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <a class="navbar-brand" href="#">Wizgle Pvt Ltd</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Blog<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CaseStudy</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Wed
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Employee Details</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Sign up
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create Account</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <h6>get started with your free account</h6>
+                  <button type="button" class="btn btn-primary btn-lg btn-block"><i class="fa-brands fa-twitter"></i> Login via Twitter</button>
+                  <button type="button" class="btn btn-secondary btn-lg btn-block"><i class="fa-brands fa-facebook-f"></i> Login via Facebook</button>
+                  <div class="input-group flex-nowrap mt-2">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="full name" aria-label="full name" aria-describedby="addon-wrapping">
+                  </div>
+          
+                  <div class="input-group flex-nowrap mt-2">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-envelope"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Email address"aria-describedby="addon-wrapping">
+                  </div>
+
+                  <div class="input-group flex-nowrap mt-2">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-phone"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="+0123456890"aria-describedby="addon-wrapping">
+                  </div>
+
+                  <div class="input-group mt-2">
+                    <div class="input-group-prepend">
+                      <label class="input-group-text" for="inputGroupSelect01"><i class="fa-regular fa-building"></i></label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                      <option selected>Select job type</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+
+                  <div class="input-group flex-nowrap mt-2">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-lock"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Create password"aria-describedby="addon-wrapping">
+                  </div>
+
+
+                  <div class="input-group flex-nowrap mt-2">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-lock"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Repeat password"aria-describedby="addon-wrapping">
+                  </div>
+            
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Create account</button>
+              </div>
+              <h6 class="a">Have an account?<a style="color: blue;">Log in</a></h6>
+             
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </nav>
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-12">
+        <div class="button">
+        <h3>Employee List</h3>
+        <button type="button" class="btn btn-primary justify-content-center">Add New User</button>
+      </div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Number</th>
+              <th scope="col">Behaviors</th>
+              <th scope="col">Performance</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Anjali</td>
+              <td>@.Wizgle.com</td>
+              <td>8552058483</td>
+              <td>
+                <a href="#" data-toggle="tooltip" data-placement="top" title="Motivated">
+                  Behaviors
+                </a>
+              </td>
+              <td>
+                <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </td>
+              <td><button class="btn btn-warning">Show</button>
+                <button class="btn btn-info">Edit</button>
+                <button class="btn btn-danger">Delete</button></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Praveer</td>
+              <td>@.Wizgle.com</td>
+              <td>8055844829</td>
+              <td> <a href="#" data-toggle="tooltip" data-placement="top" title="Motivated">
+                Behaviors
+              </a></td>
+              <td> <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"  aria-valuemin="0" aria-valuemax="100"></div></td>
+              <td><button class="btn btn-warning">Show</button>
+                <button class="btn btn-info">Edit</button>
+                <button class="btn btn-danger">Delete</button></td>
+            </tr>
+            <tr>
+            <th scope="row">3</th>
+            <td>Shubham</td>
+            <td>@.Wizgle.com</td>
+            <td>9373415664</td>
+            <td> <a href="#" data-toggle="tooltip" data-placement="top" title="Motivated">
+              Behaviors
+            </a></td>
+            <td><div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"  aria-valuemin="0" aria-valuemax="100"></div></td>
+            <td><button class="btn btn-warning">Show</button>
+              <button class="btn btn-info">Edit</button>
+              <button class="btn btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Ragini</td>
+            <td>@.Wizgle.com</td>
+            <td>8625087397</td>
+            <td> <a href="#" data-toggle="tooltip" data-placement="top" title="Motivated">
+              Behaviors
+            </a></td>
+            <td><div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45"  aria-valuemin="0" aria-valuemax="100"></div></td>
+            <td><button class="btn btn-warning">Show</button>
+              <button class="btn btn-info">Edit</button>
+              <button class="btn btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Anjali</td>
+            <td>@.Wizgle.com</td>
+            <td>8600664857</td>
+            <td> <a href="#" data-toggle="tooltip" data-placement="top" title="Motivated">
+              Behaviors
+            </a></td>
+            <td><div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45"  aria-valuemin="0" aria-valuemax="100"></div></td>
+            <td><button class="btn btn-warning">Show</button>
+              <button class="btn btn-info">Edit</button>
+              <button class="btn btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Priyanka</td>
+            <td>@.Wizgle.com</td>
+            <td>9284247035</td>
+            <td> <a href="#" data-toggle="tooltip" data-placement="top" title="Motivated">
+              Behaviors
+            </a></td>
+            <td><div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45"  aria-valuemin="0" aria-valuemax="100"></div></td>
+            <td><button class="btn btn-warning">Show</button>
+              <button class="btn btn-info">Edit</button>
+              <button class="btn btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Pratiksha</td>
+            <td>@.Wizgle.com</td>
+            <td>7972550975</td>
+            <td> <a href="#" data-toggle="tooltip" data-placement="top" title="Motivated">
+              Behaviors
+            </a></td>
+            <td><div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45"  aria-valuemin="0" aria-valuemax="100"></div></td>
+            <td><button class="btn btn-warning">Show</button>
+              <button class="btn btn-info">Edit</button>
+              <button class="btn btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Pooja</td>
+            <td>@.Wizgle.com</td>
+            <td>9359585437</td>
+            <td> <a href="#" data-toggle="tooltip" data-placement="top" title="Motivated">
+              Behaviors
+            </a></td>
+            <td><div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"  aria-valuemin="0" aria-valuemax="100"></div></td>
+            <td><button class="btn btn-warning">Show</button>
+              <button class="btn btn-info">Edit</button>
+              <button class="btn btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Vaishanvi</td>
+            <td>@.Wizgle.com</td>
+            <td>7499507504</td>
+            <td> <a href="#" data-toggle="tooltip" data-placement="top" title="Motivated">
+              Behaviors
+            </a></td>
+            <td><div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="35"  aria-valuemin="0" aria-valuemax="100"></div></td>
+            <td><button class="btn btn-warning">Show</button>
+              <button class="btn btn-info">Edit</button>
+              <button class="btn btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Rahul</td>
+            <td>@.Wizgle.com</td>
+            <td>9049508902</td>
+            <td> <a href="#" data-toggle="tooltip" data-placement="top" title="Motivated">
+              Behaviors
+            </a></td>
+            <td><div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45"  aria-valuemin="0" aria-valuemax="100"></div></td>
+            <td><button class="btn btn-warning">Show</button>
+              <button class="btn btn-info">Edit</button>
+              <button class="btn btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Gaurav</td>
+            <td>@.Wizgle.com</td>
+            <td>738755087</td>
+            <td> <a href="#" data-toggle="tooltip" data-placement="top" title="Motivated">
+              Behaviors
+            </a></td>
+            <td><div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45"  aria-valuemin="0" aria-valuemax="100"></div></td>
+            <td><button class="btn btn-warning">Show</button>
+              <button class="btn btn-info">Edit</button>
+              <button class="btn btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <th scope="row">12</th>
+            <td>Prashil</td>
+            <td>@.Wizgle.com</td>
+            <td>9689496064</td>
+            <td> <a href="#" data-toggle="tooltip" data-placement="top" title="Motivated">
+              Behaviors
+            </a></td>
+            <td><div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45"  aria-valuemin="0" aria-valuemax="100"></div></td>
+            <td><button class="btn btn-warning">Show</button>
+              <button class="btn btn-info">Edit</button>
+              <button class="btn btn-danger">Delete</button></td>
+          </tr>
+          
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous">
+</script>
+<script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous">
+   </script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"
+></script>
+  </body>
+
+</html>

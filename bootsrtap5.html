@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://kit.fontawesome.com/7fef5870cc.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      .jumbotext {
+        text-align: center;
+      }
+      .a{
+        text-align: center;
+      }
+      .subIcon{
+        padding: 10px;
+      }
+      .list{
+        color: red;
+      }
+      .labeltext{
+        font-weight: bold;
+      }
+      .navData{
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="jumbotron jumbotext">
+      <h1>Album example</h1>
+      <p class="lead">
+        something short and leading aboutthe collection below its contents the
+        creator ect makr it short and sweet but not too short so fotks dont
+        simply skip ovre it entirety.
+      </p>
+      <div class="btn-group dropleft">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          Dropleft
+        </button>
+        <div class="dropdown-menu">
+          <button class="list dropdown-item">Hotels List</button>
+          <hr>
+          <a class="dropdown-item" href="#">Radisson</a>
+         <a class="dropdown-item" href="#">Pride Hotel</a>
+         <a class="dropdown-item" href="#">President</a>
+         <a class="dropdown-item" href="#">Le maridien</a>
+        </div>
+     </div>
+  
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+        Toggle
+      </button>
+      </div>
+    <div style="min-height: 120px;">
+      <div class="collapse width" id j="collapseWidthExample">
+        <div class="card card-body" style="width: 320px;">
+          Hi I Am Here To Help You Guys.
+        </div>
+      </div>
+    </div>
+    <ul class="navData nav justify-content-center nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+      </li>
+      <li class="nav-item">
+        <div class="dropdown show">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Hotel List
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Le Merident</a>
+            <a class="dropdown-item" href="#">Hotel President</a>
+            <a class="dropdown-item" href="#">The Pride Hotel</a>
+          </div>
+        </div>
+      </li>
+    </div>
+      <li class="nav-item">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Login
+        </button>  
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <label>Username:</label>
+                  <input type="text" class="form-control" placeholder="eg.username">
+                  <label>Password:</label>
+                  <input type="text" class="form-control" placeholder="Password">
+                  <button type="submit" class="btn btn-primary mt-2">Login</button>
+                </form>
+              </div>
+      </li>
+    </ul>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-4">
+          <div class="card" style="width: 20rem">
+            <img
+              src="https://lh3.googleusercontent.com/p/AF1QipPbA2is50uV_czGb32JOL-XFLHx4co64eN50yYP=w296-h202-n-k-rw-no-v1"
+              class="card-img-top"
+              alt="..."/>
+            <div class="card-body">
+              <h5 class="card-title">Le Merident Nagpur</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button type="button" class="btn btn-outline-primary">View</button>
+              <button type="button" class="btn btn-outline-secondary">Edit</button>     
+            </div>
+          </div>
+        </div>
+    
+
+
+
+
+        
+       
+        <div class="col-4">
+          <div class="card" style="width: 20rem; height: 26rem">
+            <img src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Hotel_w_930_h_550_c_fill_g_auto_q_40_f_jpg/v1496916583/Hotel/Nagpur/00013126/1503334-U64A6622_(Large)_uIPw4G.jpg"
+              alt="..."/>
+            <div class="card-body">
+              <h5 class="card-title">Hotel President Nagpur Price</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button type="button" class="btn btn-outline-primary">View</button>
+              <button type="button" class="btn btn-outline-secondary">Edit</button>     
+              <button type="button" class="btn btn-outline-success"data-toggle="modal" data-target="#exampleModalCenter">Add Venue</button>
+            
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                     <form>
+                      <label class="labeltext">Name:</label>
+                      <input type="text" class="form-control" placeholder="eg.name">
+                      <label class="mt-2 labeltext">Venue Type</label>
+                      <select class="form-control">
+                        <option>Bar</option>
+                        <option>House</option>
+                        <option>Hall</option>
+                        <option>Garage</option>
+                      </select>
+                    <label class="mt-2 labeltext">City</label>
+                    <select class="form-control">
+                      <option>Nagpur</option>
+                      <option>Mumbai</option>
+                      <option>Pune</option>
+                    </select>
+                    <label class="mt-2 labeltext">Offer:</label>
+                    <label>weekdays</label>
+                    <input type="radio" value="weekdays">
+                    <label>weekend</label>
+                    <input type="radio" value="Weekend">
+
+                     </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-primary">submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              </div>
+              </div>
+
+
+
+
+
+
+        <div class="col-4">
+          <div class="card" style="width: 20rem">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/66098306.jpg?k=8f312d4dca1b5a36eac94d5b73b86e662c00d0b8bd03160f8b8a4ea0c60ff98f&o=&hp=1"
+              class="card-img-top"
+              alt="..."/>
+            <div class="card-body">
+              <h5 class="card-title">The Pride Hotel Nagpur</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and mak
+                the bulk of the card's content.
+              </p>
+              <button type="button" class="btn btn-outline-primary">View</button>
+              <button type="button" class="btn btn-outline-secondary">Edit</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    <div class="row mt-5">
+      <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+        <a class="list-group-item list-group-item-action" id="list-radisson-list" data-toggle="list" href="#list-radisson" role="tab" aria-controls="raddison">Raddison Hotel</a>
+        <a class="list-group-item list-group-item-action" id="list-pride-list" data-toggle="list" href="#list-pride" role="tab" aria-controls="pride">Pride Hotel</a>
+        <a class="list-group-item list-group-item-action" id="list-mariden-list" data-toggle="list" href="#list-le-mariden" role="tab" aria-controls="le-mariden">Le Mariden</a>
+        <a class="list-group-item list-group-item-action" id="list-ananya-list" data-toggle="list" href="#list-ananya" role="tab" aria-controls="ananya">Ananya Hotel</a>
+      </div>
+    </div>
+   
+    
+    <div class="col-8">
+      <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="list-radisson" role="tabpanel" aria-labelledby="list-radisson-list">Radisson Hotel Group is one of the world's largest and most dynamic hotel companies</div>
+      <div class="tab-pane fade" id="list-pride" role="tabpanel" aria-labelledby="list-pride-list">Pride Hotels Group is an eminent Indian hospitality brand with a presence in major cities across the country. </div>
+      <div class="tab-pane fade" id="list-le-mariden" role="tabpanel" aria-labelledby="list-mariden-list">design-focused international hotel brand with a European perspective.</div>
+      <div class="tab-pane fade" id="list-ananya" role="tabpanel" aria-labelledby="list-ananya-list">Ananya Resort welcomes all its guests to limitless hospitality. We can give you a fantastic experience with modern facilities</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <footer class="page-footer font-small blue pt-4 jumbotron mt-5">
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-left">
+        <p class="a">Drop us a line at hell@hiki.com</p>
+        <div class="a">
+        <i class="subIcon fa-brands fa-instagram"></i>
+        <i class="subIcon fa-brands fa-tiktok"></i>
+        <i class="subIcon fa-brands fa-facebook-f"></i>
+        <i class="subIcon fa-brands fa-youtube"></i>
+      </div>
+        </div>
+        
+   </footer>
+
+    
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous">
+       </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

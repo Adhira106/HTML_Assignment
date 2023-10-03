@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+    .middlePart{
+        display: flex;
+    }
+    #grad1{
+        height:150px;
+        width:200px;
+       background-color: red; 
+       background-image: linear-gradient(red, yellow);
+       margin-top: 10px;
+    
+    }
+    #grad2{
+        height: 150px;
+        width:200px;
+        background-color: red;
+        background-image: radial-gradient(yellow,green,rgb(164, 46, 46));
+        margin: 15px;
+     
+    }
+    #grad3{
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        background-image: conic-gradient(red, yellow, green);
+        margin: 15px;
+     
+}
+.A{
+    display: flex;
+}
+
+    .header {
+      background-color:chocolate;
+      padding: 20px;
+      text-align: center;
+}
+
+.sidebar {
+background-color: yellow;
+padding: 100px;
+
+}
+.footer{
+    background-color:chocolate;
+    padding: 20px;
+    text-align: center;
+}
+.button{
+    text-align:left;
+}
+       
+    </style>
+
+    </head>
+    <body>
+        <div class="header">
+        <h1>header</h1>
+        <div class="button">
+            <button style="color: green;">About</button>
+            <button>Contact</button>
+            <button>Product</button>
+        </div>
+    </div>
+        <div class="middlePart">
+            <div class="sidebar">
+            <h1>sidebar</h1>
+            <ul>
+                <li>Item1</li>
+                <li>Item2</li>
+                <li>Item3</li>
+                <li>Item4</li>
+                <li>Item5</li>
+                <li>Item6</li>
+            </ul>
+            </div>
+            <div class="A">
+                <h1>main content</h1>
+                <div id="grad1"></div>
+                <div id="grad2"></div>
+                <div id="grad3"></div>
+            </div>
+        </div>
+        <div class="footer"> 
+            <h1>footer</h1>
+        </div>
+    </body>
+</html>
